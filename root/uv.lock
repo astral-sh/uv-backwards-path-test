@@ -1,0 +1,24 @@
+version = 1
+requires-python = ">=3.12"
+
+[manifest]
+members = [
+    "dependency",
+    "package",
+]
+
+[[package]]
+name = "dependency"
+version = "0.1.0"
+source = { editable = "../dependency" }
+
+[[package]]
+name = "package"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "dependency" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "dependency", editable = "../dependency" }]

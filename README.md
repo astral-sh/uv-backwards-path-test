@@ -1,3 +1,3 @@
-# uv-dynamic-metadata-test
+# uv-backwards-path-test
 
-A workspace with a member that uses dynamic metadata.
+A workspace where the root uses a backwards path (`../`) for its members.
